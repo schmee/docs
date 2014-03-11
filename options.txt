@@ -161,11 +161,6 @@ value will result in an error: >
 The t_xx options cannot be set from a |modeline| or in the |sandbox|, for
 security reasons.
 
-The listing from ":set" looks different from Vi.  Long string options are put
-at the end of the list.  The number of options is quite large.  The output of
-"set all" probably does not fit on the screen, causing Vim to give the
-|more-prompt|.
-
 							*option-backslash*
 To include white space in a string option value it has to be preceded with a
 backslash.  To include a backslash you have to use two.  Effectively this
@@ -485,7 +480,7 @@ Examples:
    vi:noai:sw=3 ts=6 ~
    vim: tw=77 ~
 
-The second form (this is compatible with some versions of Vi):
+The second form:
 
 	[text]{white}{vi:|vim:|Vim:|ex:}[white]se[t] {options}:[text]
 
@@ -773,9 +768,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 	When 'smartindent' or 'cindent' is on the indent is changed in
 	a different way.
 	The 'autoindent' option is reset when the 'paste' option is set.
-	{small difference from Vi: After the indent is deleted when typing
-	<Esc> or <CR>, the cursor position when moving up or down is after the
-	deleted indent; Vi puts the cursor somewhere in the deleted indent}.
 
 				 *'autoread'* *'ar'* *'noautoread'* *'noar'*
 'autoread' 'ar'		boolean	(default off)
@@ -1560,39 +1552,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 	comment text.  Currently only used to add markers for folding, see
 	|fold-marker|.
 
-			*'compatible'* *'cp'* *'nocompatible'* *'nocp'*
-'compatible' 'cp'	boolean	(default on, off when a |vimrc| or |gvimrc|
-								file is found)
-			global
-	This option has the effect of making Vim either more Vi-compatible, or
-	make Vim behave in a more useful way.
-	This is a special kind of option, because when it's set or reset,
-	other options are also changed as a side effect.  CAREFUL: Setting or
-	resetting this option can have a lot of unexpected effects: Mappings
-	are interpreted in another way, undo behaves differently, etc.  If you
-	set this option in your vimrc file, you should probably put it at the
-	very start.
-	options.  This default was chosen for those people who want to use Vim
-	just like Vi, and don't even (want to) know about the 'compatible'
-	option.
-	When a |vimrc| or |gvimrc| file is found while Vim is starting up,
-	this option is switched off, and all options that have not been
-	modified will be set to the Vim defaults.  Effectively, this means
-	that when a |vimrc| or |gvimrc| file exists, Vim will use the Vim
-	happen for the system-wide vimrc or gvimrc file, nor for a file given
-	with the |-u| argument).  Also see |compatible-default| and
-	|posix-compliance|.
-	You can also set this option with the "-C" argument, and reset it with
-	"-N".  See |-C| and |-N|.
-	Switching this option off makes the Vim defaults be used for options
-	that have a different Vi and Vim default value.  See the options
-	marked with a '+' below.  Other options are not modified.
-	At the moment this option is set, several other options will be set
-	or reset to make Vim as Vi-compatible as possible.  See the table
-	below.  This can be used if you want to revert to Vi compatible
-	editing.
-	See also 'cpoptions'.
-
 	option		+ set value	effect	~
 
 	'allowrevins'	  off		no CTRL-_ command
@@ -1602,7 +1561,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 	'backup'	  off		no backup file
 	'cindent'	  off		no C code indentation
 	'cedit'		+ ""		no key to open the |cmdwin|
-	'cpoptions'	+ (all flags)	Vi-compatible flags
 	'cscopetag'	  off		don't use cscope for ":tag"
 	'cscopetagorder'  0		see |cscopetagorder|
 	'cscopeverbose'	  off		see |cscopeverbose|
@@ -5559,9 +5517,7 @@ A jump table for the options with a short description can be found at |Q_op|.
 	set to half the number of lines in the window when the window size
 	changes.  If you give a count to the CTRL-U or CTRL-D command it will
 	be used as the new value for 'scroll'.  Reset to half the window
-	height with ":set scroll=0".   {Vi is a bit different: 'scroll' gives
-	the number of screen lines instead of file lines, makes a difference
-	when lines wrap}
+	height with ":set scroll=0".
 
 			*'scrollbind'* *'scb'* *'noscrollbind'* *'noscb'*
 'scrollbind' 'scb'	boolean  (default off)
@@ -5935,8 +5891,7 @@ A jump table for the options with a short description can be found at |Q_op|.
 			global
 	Round indent to multiple of 'shiftwidth'.  Applies to > and <
 	commands.  CTRL-T and CTRL-D in Insert mode always round the indent to
-	a multiple of 'shiftwidth' (this is Vi compatible).
-	NOTE: This option is reset when 'compatible' is set.
+	a multiple of 'shiftwidth'.
 
 						*'shiftwidth'* *'sw'*
 'shiftwidth' 'sw'	number	(default 8)
@@ -6888,8 +6843,7 @@ A jump table for the options with a short description can be found at |Q_op|.
 			global
 	When set: Add 's' flag to 'shortmess' option (this makes the message
 	for a search that hits the start or end of the file not being
-	displayed).  When reset: Remove 's' flag from 'shortmess' option.  {Vi
-	shortens a lot of messages}
+	displayed).  When reset: Remove 's' flag from 'shortmess' option.
 
 				   *'textauto'* *'ta'* *'notextauto'* *'nota'*
 			global
@@ -7321,8 +7275,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 						*'verbose'* *'vbs'*
 'verbose' 'vbs'		number	(default 0)
 			global
-			{not in Vi, although some versions have a boolean
-			verbose option}
 	When bigger than zero, Vim will give messages about what it is doing.
 	Currently, these messages are given:
 	>= 1	When the viminfo file is read or written.
@@ -7506,8 +7458,7 @@ A jump table for the options with a short description can be found at |Q_op|.
 					    *'virtualedit'* *'ve'*
 'virtualedit' 've'	string	(default "")
 			global
-			{not available when compiled without the
-			|+virtualedit| feature}
+			{not available when compiled without the |+virtualedit| feature}
 	A comma separated list of these words:
 	    block	Allow virtual editing in Visual block mode.
 	    insert	Allow virtual editing in Insert mode.
@@ -7876,10 +7827,9 @@ A jump table for the options with a short description can be found at |Q_op|.
 	starts.  When typing text beyond this limit, an <EOL> will be inserted
 	and inserting continues on the next line.
 	Options that add a margin, such as 'number' and 'foldcolumn', cause
-	the text width to be further reduced.  This is Vi compatible.
+	the text width to be further reduced
 	When 'textwidth' is non-zero, this option is not used.
-	See also 'formatoptions' and |ins-textwidth|.  {Vi: works differently
-	and less usefully}
+	See also 'formatoptions' and |ins-textwidth|.
 
 				   *'wrapscan'* *'ws'* *'nowrapscan'* *'nows'*
 'wrapscan' 'ws'		boolean	(default on)			*E384* *E385*

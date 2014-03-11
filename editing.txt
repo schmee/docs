@@ -94,14 +94,12 @@ g CTRL-G		Prints the current position of the cursor in five
 			to hold the old name.
 							*:0file*
 :0f[ile][!]		Remove the name of the current buffer.  The optional !
-			avoids truncating the message, as with |:file|.  {not
-			in Vi}
+			avoids truncating the message, as with |:file|.
 
 :buffers
 :files
 :ls			List all the currently known file names.  See
-			'windows.txt' |:files| |:buffers| |:ls|.  {not in
-			Vi}
+			'windows.txt' |:files| |:buffers| |:ls|.
 
 Vim will remember the full path name of a file name that you enter.  In most
 cases when the file name is displayed only the name you typed is shown, but
@@ -180,8 +178,7 @@ whether the buffer was changed use the "CTRL-G" command.  The message includes
 the string "[Modified]" if the buffer has been changed.
 
 If you want to automatically save the changes without asking, switch on the
-'autowriteall' option.  'autowrite' is the associated Vi-compatible option
-that does not work for all commands.
+'autowriteall' option.
 
 If you want to keep the changed buffer without saving it, switch on the
 'hidden' option.  See |hidden-buffer|.  Some commands work like this even when
@@ -550,8 +547,7 @@ If you give more than one file name when starting Vim, this list is remembered
 as the argument list.  You can jump to each file in this list.
 
 Do not confuse this with the buffer list, which you can see with the
-|:buffers| command.  The argument list was already present in Vi, the buffer
-list is new in Vim.  Every file name in the argument list will also be present
+|:buffers| command. Every file name in the argument list will also be present
 in the buffer list (unless it was deleted with |:bdel| or |:bwipe|).  But it's
 common that names in the buffer list are not in the argument list.
 
@@ -655,13 +651,11 @@ list of the current window.
 :[count]n[ext] [++opt] [+cmd]			*:n* *:ne* *:next* *E165* *E163*
 			Edit [count] next file.  This fails when changes have
 			been made and Vim does not want to |abandon| the
-			current buffer.  Also see |++opt| and |+cmd|.  {Vi: no
-			count or ++opt}.
+			current buffer.  Also see |++opt| and |+cmd|.
 
 :[count]n[ext]! [++opt] [+cmd]
 			Edit [count] next file, discard any changes to the
-			buffer.  Also see |++opt| and |+cmd|.  {Vi: no count
-			or ++opt}.
+			buffer.  Also see |++opt| and |+cmd|.
 
 :n[ext] [++opt] [+cmd] {arglist}			*:next_f*
 			Same as |:args_f|.
@@ -681,8 +675,7 @@ list of the current window.
 			|+cmd|.
 
 :[count]prev[ious] [count] [++opt] [+cmd]		*:prev* *:previous*
-			Same as :Next.  Also see |++opt| and |+cmd|.  {Vi:
-			only in some versions}
+			Same as :Next.  Also see |++opt| and |+cmd|.
 
 							*:rew* *:rewind*
 :rew[ind] [++opt] [+cmd]
@@ -725,8 +718,7 @@ list of the current window.
 
 :[count]wn[ext]! [++opt] {file}
 			Write current file to {file} and start editing the
-			[count] next file.  Also see |++opt| and |+cmd|.  {not
-			in Vi}
+			[count] next file.  Also see |++opt| and |+cmd|.
 
 :[count]wN[ext][!] [++opt] [file]		*:wN* *:wNext*
 :[count]wp[revious][!] [++opt] [file]		*:wp* *:wprevious*
@@ -923,8 +915,7 @@ WRITING WITH MULTIPLE BUFFERS				*buffer-write*
 
 							*:wa* *:wall*
 :wa[ll]			Write all changed buffers.  Buffers without a file
-			name or which are readonly are not written. {not in
-			Vi}
+			name or which are readonly are not written.
 
 :wa[ll]!		Write all changed buffers, even the ones that are
 			readonly.  Buffers without a file name are not
@@ -1325,8 +1316,7 @@ There are a few things to remember when editing binary files:
   file.  Otherwise both <CR> <NL> and <NL> are considered to end a line
   and when the file is written the <NL> will be replaced with <CR> <NL>.
 - <Nul> characters are shown on the screen as ^@.  You can enter them with
-  "CTRL-V CTRL-@" or "CTRL-V 000" {Vi cannot handle <Nul> characters in the
-  file}
+  "CTRL-V CTRL-@" or "CTRL-V 000"
 - To insert a <NL> character in the file split up a line.  When writing the
   buffer to a file a <NL> will be written for the <EOL>.
 - Vim normally appends an <EOL> at the end of the file if there is none.
