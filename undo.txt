@@ -367,7 +367,7 @@ Marks for the buffer ('a to 'z) are also saved and restored, together with the
 text.
 
 When all changes have been undone, the buffer is not considered to be changed.
-It is then possible to exit Vim with ":q" instead of ":q!"  Note
+It is then possible to exit Vim with ":q" instead of ":q!".  Note
 that this is relative to the last write of the file.  Typing "u" after ":w"
 actually changes the buffer, compared to what was written, so the buffer is
 considered changed then.

@@ -512,7 +512,6 @@ including white space, the commands starting with "i" select an "inner" object
 without white space, or just the white space.  Thus the "inner" commands
 always select less text than the "a" commands.
 
-These commands are
 These commands are not available when the |+textobjects| feature has been
 disabled at compile time.
 Also see `gn` and `gN`, operating on the last search pattern.
