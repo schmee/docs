@@ -16,7 +16,6 @@ The basics are explained in section |08.7| of the user manual.
 4. Copying diffs		|copy-diffs|
 5. Diff options			|diff-options|
 
-{not in Vi}
 
 ==============================================================================
 1. Starting diff mode

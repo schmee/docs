@@ -11,7 +11,6 @@ Spell checking						*spell*
 3. Generating a spell file	|spell-mkspell|
 4. Spell file format		|spell-file-format|
 
-{Vi does not have any of these commands}
 
 Spell checking is not available when the |+syntax| feature has been disabled
 at compile time.
