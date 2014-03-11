@@ -153,7 +153,6 @@ decide if "aa" or "aaa" should be mapped.  This means that after typing "aa"
 that mapping won't get expanded yet, Vim is waiting for another character.
 If you type a space, then "foo" will get inserted, plus the space.  If you
 type "a", then "bar" will get inserted.
-{Vi does not allow ambiguous mappings}
 
 
 1.2 SPECIAL ARGUMENTS					*:map-arguments*

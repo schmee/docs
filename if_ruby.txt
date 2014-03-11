@@ -13,7 +13,6 @@ The Ruby Interface to Vim				*ruby* *Ruby*
 5. Global variables		|ruby-globals|
 6. Dynamic loading		|ruby-dynamic|
 
-{Vi does not have any of these commands}
 			*E266* *E267* *E268* *E269* *E270* *E271* *E272* *E273*
 
 The Ruby interface only works when Vim was compiled with the |+ruby| feature.

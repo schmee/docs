@@ -14,7 +14,6 @@ The MzScheme Interface to Vim				*mzscheme* *MzScheme*
 6. Using Function references		|mzscheme-funcref|
 7. Dynamic loading			|mzscheme-dynamic|
 
-{Vi does not have any of these commands}
 
 The MzScheme interface is available only if Vim was compiled with the
 |+mzscheme| feature.

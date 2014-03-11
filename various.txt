@@ -157,7 +157,6 @@ g8			Print the hex values of the bytes used in the
 
 :{range}z#[+-^.=]{count}				*:z#*
 			Like ":z", but number the lines.
-			{not in all versions of Vi, not with these arguments}
 
 							*:=*
 := [flags]		Print the last line number.

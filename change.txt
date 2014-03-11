@@ -132,7 +132,6 @@ gJ			Join [count] lines, with a minimum of two lines.
 			If a [range] has equal start and end values, this
 			command does nothing.  The default behavior is to
 			join the current line with the line below it.
-			{not in Vi: !}
 			See |ex-flags| for [flags].
 
 :[range]j[oin][!] {count} [flags]
@@ -140,7 +139,6 @@ gJ			Join [count] lines, with a minimum of two lines.
 			current line |cmdline-ranges|).  Same as "J", except
 			with [!] the join does not insert or delete any
 			spaces.
-			{not in Vi: !}
 			See |ex-flags| for [flags].
 
 These commands delete the <EOL> between lines.  This has the effect of joining
@@ -648,7 +646,6 @@ The flags that you can use for the substitute commands:
 	If the 'edcompatible' option is on, Vim remembers the [c] flag and
 	toggles it each time you use it, but resets it when you give a new
 	search pattern.
-	{not in Vi: highlighting of the match, other responses than 'y' or 'n'}
 
 [e]     When the search pattern fails, do not issue an error message and, in
 	particular, continue in maps as if no error occurred.  This is most
@@ -1109,7 +1106,6 @@ Vim uses the contents of the unnamed register for any put command (p or P)
 which does not specify a register.  Additionally you can access it with the
 name '"'.  This means you have to type two double quotes.  Writing to the ""
 register writes to register "0.
-{Vi: register contents are lost when changing files, no '"'}
 
 2. Numbered registers "0 to "9		*quote_number* *quote0*	*quote1*
 					*quote2* *quote3* *quote4* *quote9*
@@ -1133,7 +1129,6 @@ not exist}
 3. Small delete register "-				*quote_-* *quote-*
 This register contains text from commands that delete less than one line,
 except when the command specifies a register with ["x].
-{not in Vi}
 
 4. Named registers "a to "z or "A to "Z			*quote_alpha* *quotea*
 Vim fills these registers only when you say so.  Specify them as lowercase
@@ -1218,7 +1213,6 @@ other matches without actually searching.  You can't yank or delete into this
 register.  The search direction is available in |v:searchforward|.
 Note that the valued is restored when returning from a function
 |function-search-undo|.
-{not in Vi}
 
 							*@/*
 You can write to a register with a `:let` command |:let-@|.  Example: >

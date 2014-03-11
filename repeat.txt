@@ -140,7 +140,6 @@ q			Stops recording.  (Implementation note: The 'q' that
 			result of evaluating the expression is executed as an
 			Ex command.
 			Mappings are not recognized in these commands.
-			{Vi: only in some versions} Future: Will execute the
 			register for each line in the address range.
 
 							*:@:*
@@ -385,7 +384,6 @@ sourced file or user function and set breakpoints.
 NOTE: The debugging mode is far from perfect.  Debugging will have side
 effects on how Vim works.  You cannot use it to debug everything.  For
 example, the display is messed up by the debugging messages.
-{Vi does not have a debug mode}
 
 An alternative to debug mode is setting the 'verbose' option.  With a bigger
 number it will give more verbose messages about what Vim is doing.
@@ -578,7 +576,6 @@ OBSCURE
 Profiling means that Vim measures the time that is spent on executing
 functions and/or scripts.  The |+profile| feature is required for this.
 It is only included when Vim was compiled with "huge" features.
-{Vi does not have profiling}
 
 You can also use the |reltime()| function to measure time.  This only requires
 the |+reltime| feature, which is present more often.

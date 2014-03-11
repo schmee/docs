@@ -12,7 +12,6 @@ The OLE Interface to Vim				*ole-interface*
 4. Registration			|ole-registration|
 5. MS Visual Studio integration	|MSVisualStudio|
 
-{Vi does not have any of these commands}
 
 OLE is only available when compiled with the |+ole| feature.  See
 src/if_ole.INSTALL.

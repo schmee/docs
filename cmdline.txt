@@ -27,7 +27,6 @@ Basic command line editing is explained in chapter 20 of the user manual
 Normally characters are inserted in front of the cursor position.  You can
 move around in the command-line with the left and right cursor keys.  With the
 <Insert> key, you can toggle between inserting and overstriking characters.
-{Vi: can only alter the last character in the line}
 
 Note that if your keyboard does not have working cursor keys or any of the
 other special keys, you can use ":cnoremap" to define another key for them.
@@ -66,7 +65,6 @@ Notes:
 - All searches are put in the search history, including the ones that come
   from commands like "*" and "#".  But for a mapping, only the last search is
   remembered (to avoid that long mappings trash the history).
-{Vi: no history}
 {not available when compiled without the |+cmdline_hist| feature}
 
 There is an automatic completion of names on the command-line; see

@@ -2434,7 +2434,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 	uses another default.
 	This option cannot be set from a |modeline| or in the |sandbox|, for
 	security reasons.
-	{Vi: directory to put temp file in, defaults to "/tmp"}
 
 					*'display'* *'dy'*
 'display' 'dy'		string	(default "")
@@ -4440,7 +4439,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 	"=" operator to use this same indentation algorithm rather than
 	calling an external program if 'equalprg' is empty.
 	This option is not used when 'paste' is set.
-	{Vi: Does it a little bit differently}
 
 						*'lispwords'* *'lw'*
 'lispwords' 'lw'	string	(default is very long)
@@ -4604,7 +4602,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 						*'matchtime'* *'mat'*
 'matchtime' 'mat'	number	(default 5)
 			global
-			{not in Vi}{in Nvi}
 	Tenths of a second to show the matching paren, when 'showmatch' is
 	set.  Note that this is not in milliseconds, like other options that
 	set a time.  This is to be compatible with Nvi.
@@ -5316,7 +5313,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 	in read-only mode ("vim -R") or when the executable is called "view".
 	When using ":w!" the 'readonly' option is reset for the current
 	buffer, unless the 'Z' flag is in 'cpoptions'.
-	{not in Vi:}  When using the ":view" command the 'readonly' option is
 	set for the newly edited buffer.
 
 						*'redrawtime'* *'rdt'*
@@ -6001,7 +5997,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 				 *'shortname'* *'sn'* *'noshortname'* *'nosn'*
 'shortname' 'sn'	boolean	(default off)
 			local to buffer
-			{not in Vi, not in MS-DOS versions}
 	Filenames are assumed to be 8 characters plus one extension of 3
 	characters.  Multiple dots in file names are not allowed.  When this
 	option is on, dots in file names are replaced with underscores when
@@ -6771,7 +6766,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 	must be included in the tags file.
 	This option doesn't affect commands that find all matching tags (e.g.,
 	command-line completion and ":help").
-	{Vi: always uses binary search in some versions}
 
 						*'taglength'* *'tl'*
 'taglength' 'tl'	number	(default 0)
@@ -6810,12 +6804,10 @@ A jump table for the options with a short description can be found at |Q_op|.
 	The use of |:set+=| and |:set-=| is preferred when adding or removing
 	file names from the list.  This avoids problems when a future version
 	uses another default.
-	{Vi: default is "tags /usr/lib/tags"}
 
 				*'tagstack'* *'tgst'* *'notagstack'* *'notgst'*
 'tagstack' 'tgst'	boolean	(default on)
 			global
-			{not in all versions of Vi}
 	When on, the |tagstack| is used normally.  When off, a ":tag" or
 	":tselect" command with an argument will not push the tag onto the
 	tagstack.  A following ":tag" without an argument, a ":pop" command or
@@ -6988,7 +6980,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 						*'timeoutlen'* *'tm'*
 'timeoutlen' 'tm'	number	(default 1000)
 			global
-			{not in all versions of Vi}
 						*'ttimeoutlen'* *'ttm'*
 'ttimeoutlen' 'ttm'	number	(default -1)
 			global
@@ -7772,7 +7763,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 	in a much smarter way, taking care of wrapping lines.
 	When resizing the Vim window, the value is smaller than 1 or more than
 	or equal to 'lines' it will be set to 'lines' minus 1.
-	{Vi also uses the option to specify the number of displayed lines}
 
 						*'winheight'* *'wh'* *E591*
 'winheight' 'wh'	number	(default 1)

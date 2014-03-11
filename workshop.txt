@@ -12,7 +12,6 @@ Sun Visual WorkShop Features			*workshop* *workshop-support*
 4. Configuring gvim for a WorkShop release tree		|workshop-configure|
 5. Obtaining the latest version of the XPM library	|workshop-xpm|
 
-{Vi does not have any of these features}
 {only available when compiled with the |+sun_workshop| feature}
 
 ==============================================================================

@@ -26,7 +26,6 @@ The basics are explained in chapter 7 and 8 of the user manual |usr_07.txt|
 11. Using hidden buffers			|buffer-hidden|
 12. Special kinds of buffers			|special-buffers|
 
-{Vi does not have any of these commands}
 {not able to use multiple windows when the |+windows| feature was disabled at
 compile time}
 {not able to use vertically split windows when the |+vertsplit| feature was

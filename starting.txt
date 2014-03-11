@@ -181,7 +181,6 @@ a slash.  Thus "-R" means recovery and "-/R" readonly.
 		Note: You can use up to 10 "+" or "-c" arguments in a Vim
 		command.  They are executed in the order given.  A "-S"
 		argument counts as a "-c" argument as well.
-		{Vi only allows one command}
 
 --cmd {command}						*--cmd*
 		{command} will be executed before processing any vimrc file.

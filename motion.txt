@@ -893,7 +893,6 @@ was made yet in the current file.
 			Only one position is remembered per buffer, not one
 			for each window.  As long as the buffer is visible in
 			a window the position won't be changed.
-			{not in Vi}.
 
 							*'^* *`^*
 '^  `^			To the position where the cursor was the last time

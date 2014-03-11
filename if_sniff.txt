@@ -11,7 +11,6 @@ SNiFF+ and Vim				    *sniff*
 2. Commands				    |sniff-commands|
 3. Compiling Vim with SNiFF+ interface	    |sniff-compiling|
 
-{Vi does not have any of these commands}  *E275* *E274* *E276* *E278* *E279*
 
 The SNiFF+ interface only works, when Vim was compiled with the |+sniff|
 feature.

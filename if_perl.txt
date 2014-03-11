@@ -11,7 +11,6 @@ Perl and Vim				*perl* *Perl*
 3. Using the Perl interface		|perl-using|
 4. Dynamic loading			|perl-dynamic|
 
-{Vi does not have any of these commands}
 
 The Perl interface only works when Vim was compiled with the |+perl| feature.
 

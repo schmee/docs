@@ -66,7 +66,6 @@ CTRL-A		Insert previously inserted text.
 <BS> or CTRL-H	Delete the character before the cursor (see |i_backspacing|
 		about joining lines).
 		See |:fixdel| if your <BS> key does not do what you want.
-		{Vi: does not delete autoindents}
 						*i_<Del>* *i_DEL*
 <Del>		Delete the character under the cursor.  If the cursor is at
 		the end of the line, and the 'backspace' option includes
@@ -269,7 +268,6 @@ For backwards compatibility the values "0", "1" and "2" are also allowed, see
 If the 'backspace' option does contain "eol" and the cursor is in column 1
 when one of the three keys is used, the current line is joined with the
 previous line.  This effectively deletes the <EOL> in front of the cursor.
-{Vi: does not cross lines, does not delete past start position of insert}
 
 						*i_CTRL-V_digit*
 With CTRL-V the decimal, octal or hexadecimal value of a character can be
@@ -541,7 +539,6 @@ last one).  {Vi does not have the 'expandtab' option}
 
 Enter Virtual Replace mode with the "gR" command in normal mode.
 {not available when compiled without the |+vreplace| feature}
-{Vi does not have Virtual Replace mode}
 
 Virtual Replace mode is similar to Replace mode, but instead of replacing
 actual characters in the file, you are replacing screen real estate, so that

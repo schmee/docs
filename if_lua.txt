@@ -15,7 +15,6 @@ The Lua Interface to Vim				*lua* *Lua*
 7. Window userdata		|lua-window|
 8. The luaeval function		|lua-luaeval|
 
-{Vi does not have any of these commands}
 
 The Lua interface is available only when Vim was compiled with the
 |+lua| feature.

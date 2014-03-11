@@ -700,7 +700,6 @@ exceptions:
   character.
 - When inserting text in one window, other windows on the same text are not
   updated until the insert is finished.
-{Vi: The screen is not always updated on slow terminals}
 
 Lines longer than the window width will wrap, unless the 'wrap' option is off
 (see below).  The 'linebreak' option can be set to wrap at a blank character.
@@ -746,7 +745,6 @@ If there is a single line that is too long to fit in the window, this is a
 special situation.  Vim will show only part of the line, around where the
 cursor is.  There are no special characters shown, so that you can edit all
 parts of this line.
-{Vi: gives an "internal error" on lines that do not fit in the window}
 
 The '@' occasion in the 'highlight' option can be used to set special
 highlighting for the '@' and '~' characters.  This makes it possible to

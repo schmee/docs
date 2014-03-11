@@ -60,7 +60,6 @@ CTRL-G		or				*CTRL-G* *:f* *:fi* *:file*
 			option is set), and the file status (readonly,
 			modified, read errors, new file).  See the 'shortmess'
 			option about how to make this message shorter.
-			{Vi does not include column number}
 
 :f[ile]!		like |:file|, but don't truncate the name even when
 			'shortmess' indicates this.
@@ -86,7 +85,6 @@ g CTRL-G		Prints the current position of the cursor in five
 			displayed.
 			In Blockwise mode, Column count is also shown.  (For
 			{Visual} see |Visual-mode|.)
-			{not in VI}
 
 							*:file_f*
 :f[ile][!] {name}	Sets the current file name to {name}.  The optional !
@@ -199,7 +197,6 @@ If you want to keep the changed buffer without saving it, switch on the
 			buffer and 'autowriteall' isn't set or the file can't
 			be written.
 			Also see |++opt| and |+cmd|.
-			{Vi: no ++opt}
 
 							*:edit!* *discard*
 :e[dit]! [++opt] [+cmd]
@@ -207,7 +204,6 @@ If you want to keep the changed buffer without saving it, switch on the
 			the current buffer.  This is useful if you want to
 			start all over again.
 			Also see |++opt| and |+cmd|.
-			{Vi: no ++opt}
 
 							*:edit_f*
 :e[dit] [++opt] [+cmd] {file}
@@ -216,14 +212,12 @@ If you want to keep the changed buffer without saving it, switch on the
 			buffer, unless 'hidden' is set or 'autowriteall' is
 			set and the file can be written.
 			Also see |++opt| and |+cmd|.
-			{Vi: no ++opt}
 
 							*:edit!_f*
 :e[dit]! [++opt] [+cmd] {file}
 			Edit {file} always.  Discard any changes to the
 			current buffer.
 			Also see |++opt| and |+cmd|.
-			{Vi: no ++opt}
 
 :e[dit] [++opt] [+cmd] #[count]
 			Edit the [count]th buffer (as shown by |:files|).
@@ -231,7 +225,6 @@ If you want to keep the changed buffer without saving it, switch on the
 			#" doesn't work if the alternate buffer doesn't have a
 			file name, while CTRL-^ still works then.
 			Also see |++opt| and |+cmd|.
-			{Vi: no ++opt}
 
 							*:ene* *:enew*
 :ene[w]			Edit a new, unnamed buffer.  This fails when changes
@@ -333,7 +326,6 @@ CTRL-^			Edit the alternate file.  Mostly the alternate file is
 			Leading blanks are skipped, otherwise all blanks and
 			special characters are included in the file name.
 			(For {Visual} see |Visual-mode|.)
-			{not in VI}
 
 							*gF*
 [count]gF		Same as "gf", except if a number follows the file
@@ -582,14 +574,12 @@ list of the current window.
 			the first one.  This fails when changes have been made
 			and Vim does not want to |abandon| the current buffer.
 			Also see |++opt| and |+cmd|.
-			{Vi: no ++opt}
 
 :ar[gs]! [++opt] [+cmd] {arglist}			*:args_f!*
 			Define {arglist} as the new argument list and edit
 			the first one.  Discard any changes to the current
 			buffer.
 			Also see |++opt| and |+cmd|.
-			{Vi: no ++opt}
 
 :[count]arge[dit][!] [++opt] [+cmd] {name}		*:arge* *:argedit*
 			Add {name} to the argument list and edit it.
@@ -782,7 +772,6 @@ fourth file in the argument list.  This happens when you do ":e file".
 
 LOCAL ARGUMENT LIST
 
-{not in Vi}
 {not available when compiled without the |+windows| or |+listcmds| features}
 
 							*:arglocal*
