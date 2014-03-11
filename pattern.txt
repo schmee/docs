@@ -424,30 +424,28 @@ More explanation and examples below, follow the links.		*E64* *E871*
 	  multi ~
      'magic' 'nomagic'	matches of the preceding atom ~
 |/star|	*	\*	0 or more	as many as possible
-|/\+|	\+	\+	1 or more	as many as possible (*)
-|/\=|	\=	\=	0 or 1		as many as possible (*)
-|/\?|	\?	\?	0 or 1		as many as possible (*)
+|/\+|	\+	\+	1 or more	as many as possible
+|/\=|	\=	\=	0 or 1		as many as possible
+|/\?|	\?	\?	0 or 1		as many as possible
 
-|/\{|	\{n,m}	\{n,m}	n to m		as many as possible (*)
-	\{n}	\{n}	n		exactly (*)
-	\{n,}	\{n,}	at least n	as many as possible (*)
-	\{,m}	\{,m}	0 to m		as many as possible (*)
-	\{}	\{}	0 or more	as many as possible (same as *) (*)
+|/\{|	\{n,m}	\{n,m}	n to m		as many as possible
+	\{n}	\{n}	n		exactly
+	\{n,}	\{n,}	at least n	as many as possible
+	\{,m}	\{,m}	0 to m		as many as possible
+	\{}	\{}	0 or more	as many as possible (same as *)
 
-|/\{-|	\{-n,m}	\{-n,m}	n to m		as few as possible (*)
-	\{-n}	\{-n}	n		exactly (*)
-	\{-n,}	\{-n,}	at least n	as few as possible (*)
-	\{-,m}	\{-,m}	0 to m		as few as possible (*)
-	\{-}	\{-}	0 or more	as few as possible (*)
+|/\{-|	\{-n,m}	\{-n,m}	n to m		as few as possible
+	\{-n}	\{-n}	n		exactly
+	\{-n,}	\{-n,}	at least n	as few as possible
+	\{-,m}	\{-,m}	0 to m		as few as possible
+	\{-}	\{-}	0 or more	as few as possible
 
 							*E59*
-|/\@>|	\@>	\@>	1, like matching a whole pattern (*)
-|/\@=|	\@=	\@=	nothing, requires a match |/zero-width| (*)
-|/\@!|	\@!	\@!	nothing, requires NO match |/zero-width| (*)
-|/\@<=|	\@<=	\@<=	nothing, requires a match behind |/zero-width| (*)
-|/\@<!|	\@<!	\@<!	nothing, requires NO match behind |/zero-width| (*)
-
-(*)
+|/\@>|	\@>	\@>	1, like matching a whole pattern
+|/\@=|	\@=	\@=	nothing, requires a match |/zero-width|
+|/\@!|	\@!	\@!	nothing, requires NO match |/zero-width|
+|/\@<=|	\@<=	\@<=	nothing, requires a match behind |/zero-width|
+|/\@<!|	\@<!	\@<!	nothing, requires NO match behind |/zero-width|
 
 
 Overview of ordinary atoms.				*/ordinary-atom*
