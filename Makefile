@@ -26,20 +26,10 @@ DOCS = \
 	fold.txt \
 	ft_ada.txt \
 	ft_sql.txt \
-	hangulin.txt \
 	hebrew.txt \
 	help.txt \
 	helphelp.txt \
 	howto.txt \
-	if_cscop.txt \
-	if_lua.txt \
-	if_mzsch.txt \
-	if_ole.txt \
-	if_perl.txt \
-	if_pyth.txt \
-	if_ruby.txt \
-	if_sniff.txt \
-	if_tcl.txt \
 	indent.txt \
 	index.txt \
 	insert.txt \
@@ -49,22 +39,12 @@ DOCS = \
 	message.txt \
 	mlang.txt \
 	motion.txt \
-	netbeans.txt \
 	options.txt \
 	os_unix.txt \
 	pattern.txt \
-	pi_getscript.txt \
-	pi_gzip.txt \
-	pi_netrw.txt \
-	pi_paren.txt \
-	pi_spec.txt \
-	pi_tar.txt \
-	pi_vimball.txt \
-	pi_zip.txt \
 	print.txt \
 	quickfix.txt \
 	quickref.txt \
-	quotes.txt \
 	recover.txt \
 	remote.txt \
 	repeat.txt \
@@ -73,7 +53,6 @@ DOCS = \
 	scroll.txt \
 	sign.txt \
 	spell.txt \
-	sponsor.txt \
 	starting.txt \
 	syntax.txt \
 	tabpage.txt \
@@ -117,14 +96,8 @@ DOCS = \
 	usr_90.txt \
 	usr_toc.txt \
 	various.txt \
-	version4.txt \
-	version5.txt \
-	version6.txt \
-	version7.txt \
-	vi_diff.txt \
 	visual.txt \
 	windows.txt \
-	workshop.txt
 
 HTMLS = \
 	arabic.html \
@@ -143,19 +116,9 @@ HTMLS = \
 	fold.html \
 	ft_ada.html \
 	ft_sql.html \
-	hangulin.html \
 	hebrew.html \
 	helphelp.html \
 	howto.html \
-	if_cscop.html \
-	if_lua.html \
-	if_mzsch.html \
-	if_ole.html \
-	if_perl.html \
-	if_pyth.html \
-	if_ruby.html \
-	if_sniff.html \
-	if_tcl.html \
 	indent.html \
 	index.html \
 	insert.html \
@@ -165,18 +128,9 @@ HTMLS = \
 	message.html \
 	mlang.html \
 	motion.html \
-	netbeans.html \
 	options.html \
 	os_unix.html \
 	pattern.html \
-	pi_getscript.html \
-	pi_gzip.html \
-	pi_netrw.html \
-	pi_paren.html \
-	pi_spec.html \
-	pi_tar.html \
-	pi_vimball.html \
-	pi_zip.html \
 	print.html \
 	quickfix.html \
 	quickref.html \
@@ -234,15 +188,9 @@ HTMLS = \
 	usr_90.html \
 	usr_toc.html \
 	various.html \
-	version4.html \
-	version5.html \
-	version6.html \
-	version7.html \
-	vi_diff.html \
 	vimindex.html \
 	visual.html \
 	windows.html \
-	workshop.html
 
 CONVERTED = \
 	vim-fr.UTF-8.1 \
