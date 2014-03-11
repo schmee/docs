@@ -8,7 +8,6 @@ Welcome to Vim Version 6.0!  A large number of features has been added.  This
 file mentions all the new items that have been added, changes to existing
 features and bug fixes compared to Vim 5.x.
 
-See |vi_diff.txt| for an overview of differences between Vi and Vim 6.0.
 See |version4.txt| for differences between Vim 3.0 and Vim 4.0.
 See |version5.txt| for differences between Vim 4.0 and Vim 5.0.
 

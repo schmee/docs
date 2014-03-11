@@ -7,7 +7,6 @@ Welcome to Vim Version 5.0!
 
 This document lists the differences between Vim 4.x and Vim 5.0.
 Although 5.0 is mentioned here, this is also for version 5.1, 5.2, etc.
-See |vi_diff.txt| for an overview of differences between Vi and Vim 5.0.
 See |version4.txt| for differences between Vim 3.0 and Vim 4.0.
 
 INCOMPATIBLE:				|incompatible-5|

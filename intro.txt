@@ -34,10 +34,6 @@ It can be accessed from within Vim with the <Help> or <F1> key and with the
 is not located in the default place.  You can jump to subjects like with tags:
 Use CTRL-] to jump to a subject under the cursor, use CTRL-T to jump back.
 
-Throughout this manual the differences between Vi and Vim are mentioned in
-curly braces, like this: {Vi does not have on-line help}.  See |vi_diff.txt|
-for a summary of the differences between Vim and Vi.
-
 This manual refers to Vim on various machines.  There may be small differences
 between different computers and terminals.  Besides the remarks given in this
 document, there is a separate document for each supported system, see
