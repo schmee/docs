@@ -41,7 +41,6 @@ edit source code.  On the other hand, you can send queries to SNiFF+ with the
 
 			    *:sniff* *:sni*
 :sni[ff] request [symbol]   Send request to sniff with optional symbol.
-			    {not in Vi}
 :sni[ff]		    Display all possible requests and the connection
 			    status
 

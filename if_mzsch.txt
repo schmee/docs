@@ -39,7 +39,7 @@ To speed up the process, you might also want to use --disable-gracket and
 
 							*:mzscheme* *:mz*
 :[range]mz[scheme] {stmt}
-			Execute MzScheme statement {stmt}.  {not in Vi}
+			Execute MzScheme statement {stmt}. 
 
 :[range]mz[scheme] << {endmarker}
 {script}
@@ -50,7 +50,7 @@ To speed up the process, you might also want to use --disable-gracket and
 			|script-here|.
 
 							*:mzfile* *:mzf*
-:[range]mzf[ile] {file}	Execute the MzScheme script in {file}.  {not in Vi}
+:[range]mzf[ile] {file}	Execute the MzScheme script in {file}. 
 
 All of these commands do essentially the same thing - they execute a piece of
 MzScheme code, with the "current range" set to the given line

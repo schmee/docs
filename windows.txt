@@ -667,7 +667,7 @@ can also get to them with the buffer list commands, like ":bnext".
 			the current window.
 			{cmd} can contain '|' to concatenate several commands.
 			{cmd} must not open or close windows or reorder them.
-			{not in Vi} {not available when compiled without the
+			{not available when compiled without the
 			|+listcmds| feature}
 			Also see |:tabdo|, |:argdo| and |:bufdo|.
 
@@ -693,7 +693,7 @@ can also get to them with the buffer list commands, like ":bnext".
 			autocommand event is disabled by adding it to
 			'eventignore'.  This considerably speeds up editing
 			each buffer.
-			{not in Vi} {not available when compiled without the
+			{not available when compiled without the
 			|+listcmds| feature}
 			Also see |:tabdo|, |:argdo| and |:windo|.
 
@@ -810,7 +810,7 @@ CTRL-W CTRL-Z					*CTRL-W_CTRL-Z* *:pc* *:pclose*
 							*:pp* *:ppop*
 :[count]pp[op][!]
 		Does ":[count]pop[!]" in the preview window.  See |:pop| and
-		|:ptag|.  {not in Vi}
+		|:ptag|. 
 
 CTRL-W }						*CTRL-W_}*
 		Use identifier under cursor as a tag and perform a :ptag on

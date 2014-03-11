@@ -25,7 +25,7 @@ The Lua interface is available only when Vim was compiled with the
 
 							*:lua*
 :[range]lua {chunk}
-			Execute Lua chunk {chunk}.    {not in Vi}
+			Execute Lua chunk {chunk}.   
 
 Examples:
 >
@@ -36,7 +36,7 @@ Examples:
 :[range]lua << {endmarker}
 {script}
 {endmarker}
-			Execute Lua script {script}.  {not in Vi}
+			Execute Lua script {script}. 
 			Note: This command doesn't work when the Lua
 			feature wasn't compiled in.  To avoid errors, see
 			|script-here|.
@@ -67,7 +67,6 @@ Example:
 			If the value returned by the function is a string it
 			becomes the text of the line in the current turn. The
 			default for [range] is the whole file: "1,$".
-							{not in Vi}
 
 Examples:
 >
@@ -81,7 +80,7 @@ Examples:
 
 							*:luafile*
 :[range]luafile {file}
-			Execute Lua script in {file}. {not in Vi}
+			Execute Lua script in {file}.
 			The whole argument is used as a single file name.
 
 Examples:

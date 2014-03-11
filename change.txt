@@ -59,7 +59,7 @@ For inserting text see |insert.txt|.
 {Visual}["x]x	or					*v_x* *v_d* *v_<Del>*
 {Visual}["x]d   or
 {Visual}["x]<Del>	Delete the highlighted text [into register x] (for
-			{Visual} see |Visual-mode|).  {not in Vi}
+			{Visual} see |Visual-mode|).
 
 {Visual}["x]CTRL-H   or					*v_CTRL-H* *v_<BS>*
 {Visual}["x]<BS>	When in Select mode: Delete the highlighted text [into
@@ -69,7 +69,7 @@ For inserting text see |insert.txt|.
 {Visual}["x]D		Delete the highlighted lines [into register x] (for
 			{Visual} see |Visual-mode|).  In Visual block mode,
 			"D" deletes the highlighted text plus all text until
-			the end of the line.  {not in Vi}
+			the end of the line.
 
 					*:d* *:de* *:del* *:delete* *:dl* *:dp*
 :[range]d[elete] [x]	Delete [range] lines (default: current line) [into
@@ -114,11 +114,11 @@ J			Join [count] lines, with a minimum of two lines.
 							*v_J*
 {Visual}J		Join the highlighted lines, with a minimum of two
 			lines.  Remove the indent and insert up to two spaces
-			(see below).  {not in Vi}
+			(see below).
 
 							*gJ*
 gJ			Join [count] lines, with a minimum of two lines.
-			Don't insert or remove any spaces.  {not in Vi}
+			Don't insert or remove any spaces.
 
 							*v_gJ*
 {Visual}gJ		Join the highlighted lines, with a minimum of two
@@ -218,14 +218,14 @@ gR			Enter Virtual Replace mode: Each character you type
 							*v_C*
 {Visual}["x]C		Delete the highlighted lines [into register x] and
 			start insert.  In Visual block mode it works
-			differently |v_b_C|.  {not in Vi}
+			differently |v_b_C|.
 							*v_S*
 {Visual}["x]S		Delete the highlighted lines [into register x] and
 			start insert (for {Visual} see |Visual-mode|).  {not
 			in Vi}
 							*v_R*
 {Visual}["x]R		Currently just like {Visual}["x]S.  In a next version
-			it might work differently. {not in Vi}
+			it might work differently.
 
 Notes:
 - You can end Insert and Replace mode with <Esc>.
@@ -324,21 +324,21 @@ The following commands change the case of letters.  The currently active
 			tilde cannot be used as an operator}
 
 							*g~*
-g~{motion}		Switch case of {motion} text. {not in Vi}
+g~{motion}		Switch case of {motion} text.
 
 g~g~							*g~g~* *g~~*
 g~~			Switch case of current line. {not in Vi}.
 
 							*v_~*
 {Visual}~		Switch case of highlighted text (for {Visual} see
-			|Visual-mode|). {not in Vi}
+			|Visual-mode|).
 
 							*v_U*
 {Visual}U		Make highlighted text uppercase (for {Visual} see
-			|Visual-mode|). {not in Vi}
+			|Visual-mode|).
 
 							*gU* *uppercase*
-gU{motion}		Make {motion} text uppercase. {not in Vi}
+gU{motion}		Make {motion} text uppercase.
 			Example: >
 				:map! <C-F> <Esc>gUiw`]a
 <			This works in Insert mode: press CTRL-F to make the
@@ -351,20 +351,20 @@ gUU			Make current line uppercase. {not in Vi}.
 
 							*v_u*
 {Visual}u		Make highlighted text lowercase (for {Visual} see
-			|Visual-mode|).  {not in Vi}
+			|Visual-mode|).
 
 							*gu* *lowercase*
-gu{motion}		Make {motion} text lowercase. {not in Vi}
+gu{motion}		Make {motion} text lowercase.
 
 gugu							*gugu* *guu*
 guu			Make current line lowercase. {not in Vi}.
 
 							*g?* *rot13*
-g?{motion}		Rot13 encode {motion} text. {not in Vi}
+g?{motion}		Rot13 encode {motion} text.
 
 							*v_g?*
 {Visual}g?		Rot13 encode the highlighted text (for {Visual} see
-			|Visual-mode|).  {not in Vi}
+			|Visual-mode|).
 
 g?g?							*g?g?* *g??*
 g??			Rot13 encode current line. {not in Vi}.
@@ -377,11 +377,11 @@ uppercase: >
 Adding and subtracting ~
 							*CTRL-A*
 CTRL-A			Add [count] to the number or alphabetic character at
-			or after the cursor.  {not in Vi}
+			or after the cursor.
 
 							*CTRL-X*
 CTRL-X			Subtract [count] from the number or alphabetic
-			character at or after the cursor.  {not in Vi}
+			character at or after the cursor.
 
 The CTRL-A and CTRL-X commands work for (signed) decimal numbers, unsigned
 octal and hexadecimal numbers and alphabetic characters.  This depends on the
@@ -455,7 +455,7 @@ SHIFTING LINES LEFT OR RIGHT				*shift-left-right*
 			Repeat '<' for shifting multiple 'shiftwidth's.
 
 :[range]le[ft] [indent]	left align lines in [range].  Sets the indent in the
-			lines to [indent] (default 0).  {not in Vi}
+			lines to [indent] (default 0).
 
 							*:>*
 :[range]> [flags]	Shift {count} [range] lines one 'shiftwidth' right.
@@ -521,7 +521,6 @@ comment (starting with '"') after the `:!` command.
 							*v_!*
 {Visual}!{filter}	Filter the highlighted lines through the external
 			program {filter} (for {Visual} see |Visual-mode|).
-			{not in Vi}
 
 :{range}![!]{filter} [!][arg]				*:range!*
 			Filter {range} lines through the external program
@@ -555,7 +554,6 @@ comment (starting with '"') after the `:!` command.
 
 							*v_=*
 {Visual}=		Filter the highlighted lines like with ={motion}.
-			{not in Vi}
 
 
 						*tempfile* *setuid*
@@ -618,15 +616,13 @@ g&			Synonym for `:%s//~/&` (repeat last substitute with
 			For example, when you first do a substitution with
 			`:s/pattern/repl/flags` and then `/search` for
 			something else, `g&` will do `:%s/search/repl/flags`.
-			Mnemonic: global substitute. {not in Vi}
+			Mnemonic: global substitute.
 
 						*:snomagic* *:sno*
 :[range]sno[magic] ...	Same as `:substitute`, but always use 'nomagic'.
-			{not in Vi}
 
 						*:smagic* *:sm*
 :[range]sm[agic] ...	Same as `:substitute`, but always use 'magic'.
-			{not in Vi}
 
 							*:s_flags*
 The flags that you can use for the substitute commands:
@@ -636,7 +632,6 @@ The flags that you can use for the substitute commands:
 		:&&
 		:s/this/that/&
 <	Note that `:s` and `:&` don't keep the flags.
-	{not in Vi}
 
 [c]	Confirm each substitution.  Vim highlights the matching string (with
 	|hl-IncSearch|).  You can type:				*:s_c*
@@ -644,8 +639,8 @@ The flags that you can use for the substitute commands:
 	    'l'	    to substitute this match and then quit ("last")
 	    'n'	    to skip this match
 	    <Esc>   to quit substituting
-	    'a'	    to substitute this and all remaining matches {not in Vi}
-	    'q'	    to quit substituting {not in Vi}
+	    'a'	    to substitute this and all remaining matches
+	    'q'	    to quit substituting
 	    CTRL-E  to scroll the screen up {not in Vi, not available when
 			compiled without the |+insert_expand| feature}
 	    CTRL-Y  to scroll the screen down {not in Vi, not available when
@@ -664,7 +659,6 @@ The flags that you can use for the substitute commands:
 		No previous substitute regular expression
 		Trailing characters
 		Interrupted
-	{not in Vi}
 
 [g]	Replace all occurrences in the line.  Without this argument,
 	replacement occurs only for the first occurrence in each line.  If
@@ -675,11 +669,9 @@ The flags that you can use for the substitute commands:
 
 [i]	Ignore case for the pattern.  The 'ignorecase' and 'smartcase' options
 	are not used.
-	{not in Vi}
 
 [I]	Don't ignore case for the pattern.  The 'ignorecase' and 'smartcase'
 	options are not used.
-	{not in Vi}
 
 [n]	Report the number of matches, do not actually substitute.  The [c]
 	flag is ignored.  The matches are reported as if 'report' is zero.
@@ -709,7 +701,6 @@ The flags that you can use for the substitute commands:
 		/green
 		:&
 <	The last command will replace "blue" with "red".
-	{not in Vi}
 
 Note that there is no flag to change the "magicness" of the pattern.  A
 different command is used instead, or you can use |/\v| and friends.  The
@@ -900,7 +891,6 @@ This replaces each 'E' character with a euro sign.  Read more in |<Char->|.
 			this (that's a good habit anyway).
 			`:retab!` may also change a sequence of spaces by
 			<Tab> characters, which can mess up a printf().
-			{not in Vi}
 			Not available when |+ex_extra| feature was disabled at
 			compile time.
 
@@ -926,17 +916,16 @@ inside of strings can change!  Also see 'softtabstop' option. >
 :reg[isters]		Display the contents of all numbered and named
 			registers.  If a register is written to for |:redir|
 			it will not be listed.
-			{not in Vi}
 
 
 :reg[isters] {arg}	Display the contents of the numbered and named
 			registers that are mentioned in {arg}.  For example: >
 				:dis 1a
 <			to display registers '1' and 'a'.  Spaces are allowed
-			in {arg}.  {not in Vi}
+			in {arg}.
 
 							*:di* *:display*
-:di[splay] [arg]	Same as :registers.  {not in Vi}
+:di[splay] [arg]	Same as :registers.
 
 							*y* *yank*
 ["x]y{motion}		Yank {motion} text [into register x].  When no
@@ -955,11 +944,11 @@ inside of strings can change!  Also see 'softtabstop' option. >
 
 							*v_y*
 {Visual}["x]y		Yank the highlighted text [into register x] (for
-			{Visual} see |Visual-mode|).  {not in Vi}
+			{Visual} see |Visual-mode|).
 
 							*v_Y*
 {Visual}["x]Y		Yank the highlighted lines [into register x] (for
-			{Visual} see |Visual-mode|).  {not in Vi}
+			{Visual} see |Visual-mode|).
 
 							*:y* *:yank* *E850*
 :[range]y[ank] [x]	Yank [range] lines [into register x]. Yanking to the
@@ -986,7 +975,6 @@ inside of strings can change!  Also see 'softtabstop' option. >
 			Leaves the cursor at the end of the new text.
 			Using the mouse only works when 'mouse' contains 'n'
 			or 'a'.
-			{not in Vi}
 			If you have a scrollwheel and often accidentally paste
 			text, you can use these mappings to disable the
 			pasting with the middle mouse button: >
@@ -997,11 +985,11 @@ inside of strings can change!  Also see 'softtabstop' option. >
 
 							*gp*
 ["x]gp			Just like "p", but leave the cursor just after the new
-			text.  {not in Vi}
+			text.
 
 							*gP*
 ["x]gP			Just like "P", but leave the cursor just after the new
-			text.  {not in Vi}
+			text.
 
 							*:pu* *:put*
 :[line]pu[t] [x]	Put the text [from register x] after [line] (default
@@ -1029,14 +1017,14 @@ inside of strings can change!  Also see 'softtabstop' option. >
 ["x]]p		    or					*]p* *]<MiddleMouse>*
 ["x]]<MiddleMouse>	Like "p", but adjust the indent to the current line.
 			Using the mouse only works when 'mouse' contains 'n'
-			or 'a'.  {not in Vi}
+			or 'a'.
 
 ["x][P		    or					*[P*
 ["x]]P		    or					*]P*
 ["x][p		    or					*[p* *[<MiddleMouse>*
 ["x][<MiddleMouse>	Like "P", but adjust the indent to the current line.
 			Using the mouse only works when 'mouse' contains 'n'
-			or 'a'.  {not in Vi}
+			or 'a'.
 
 You can use these commands to copy text from one place to another.  Do this
 by first getting the text into a register with a yank, delete or change
@@ -1105,7 +1093,7 @@ There are nine types of registers:			*registers* *E354*
 4. 26 named registers "a to "z or "A to "Z
 5. four read-only registers ":, "., "% and "#
 6. the expression register "=
-7. The selection and drop registers "*, "+ and "~ 
+7. The selection and drop registers "*, "+ and "~
 8. The black hole register "_
 9. Last search pattern register "/
 
@@ -1155,7 +1143,7 @@ a line break is inserted before the appended text.
 
 5. Read-only registers ":, "., "% and "#
 These are '%', '#', ':' and '.'.  You can use them only with the "p", "P",
-and ":put" commands and with CTRL-R.  {not in Vi}
+and ":put" commands and with CTRL-R.
 						*quote_.* *quote.* *E29*
 	".	Contains the last inserted text (the same as what is inserted
 		with the insert mode commands CTRL-A and CTRL-@).  Note: this
@@ -1194,13 +1182,13 @@ an error message (use string() to convert).
 
 If the "= register is used for the "p" command, the String is split up at <NL>
 characters.  If the String ends in a <NL>, it is regarded as a linewise
-register.  {not in Vi}
+register.
 
-7. Selection and drop registers "*, "+ and "~ 
+7. Selection and drop registers "*, "+ and "~
 Use these registers for storing and retrieving the selected text for the GUI.
 See |quotestar| and |quoteplus|.  When the clipboard is not available or not
 working, the unnamed register is used instead.  For Unix systems the clipboard
-is only available when the |+xterm_clipboard| feature is present.  {not in Vi}
+is only available when the |+xterm_clipboard| feature is present.
 
 Note that there is only a distinction between "* and "+ for X11 systems.  For
 an explanation of the difference, see |x11-selection|.  Under MS-Windows, use
@@ -1211,7 +1199,7 @@ The read-only "~ register stores the dropped text from the last drag'n'drop
 operation.  When something has been dropped onto Vim, the "~ register is
 filled in and the <Drop> pseudo key is sent for notification.  You can remap
 this key if you want; the default action (for all modes) is to insert the
-contents of the "~ register at the cursor position.  {not in Vi}
+contents of the "~ register at the cursor position.
 {only available when compiled with the |+dnd| feature, currently only with the
 GTK GUI}
 
@@ -1221,7 +1209,7 @@ Drag'n'drop of URI lists is handled internally.
 8. Black hole register "_				*quote_*
 When writing to this register, nothing happens.  This can be used to delete
 text without affecting the normal registers.  When reading from this register,
-nothing is returned.  {not in Vi}
+nothing is returned.
 
 9. Last search pattern register	"/			*quote_/* *quote/*
 Contains the most recent search-pattern.  This is used for "n" and 'hlsearch'.
@@ -1261,21 +1249,19 @@ The next three commands always work on whole lines.
 :[range]ce[nter] [width]				*:ce* *:center*
 			Center lines in [range] between [width] columns
 			(default 'textwidth' or 80 when 'textwidth' is 0).
-			{not in Vi}
 			Not available when |+ex_extra| feature was disabled at
 			compile time.
 
 :[range]ri[ght] [width]					*:ri* *:right*
 			Right-align lines in [range] at [width] columns
 			(default 'textwidth' or 80 when 'textwidth' is 0).
-			{not in Vi}
 			Not available when |+ex_extra| feature was disabled at
 			compile time.
 
 							*:le* *:left*
 :[range]le[ft] [indent]
 			Left-align lines in [range].  Sets the indent in the
-			lines to [indent] (default 0).  {not in Vi}
+			lines to [indent] (default 0).
 			Not available when |+ex_extra| feature was disabled at
 			compile time.
 
@@ -1304,24 +1290,24 @@ gq{motion}		Format the lines that {motion} moves over.
 
 gqgq							*gqgq* *gqq*
 gqq			Format the current line.  With a count format that
-			many lines.  {not in Vi}
+			many lines.
 
 							*v_gq*
 {Visual}gq		Format the highlighted text.  (for {Visual} see
-			|Visual-mode|).  {not in Vi}
+			|Visual-mode|).
 
 							*gw*
 gw{motion}		Format the lines that {motion} moves over.  Similar to
 			|gq| but puts the cursor back at the same position in
 			the text.  However, 'formatprg' and 'formatexpr' are
-			not used.  {not in Vi}
+			not used.
 
 gwgw							*gwgw* *gww*
-gww			Format the current line as with "gw".  {not in Vi}
+gww			Format the current line as with "gw".
 
 							*v_gw*
 {Visual}gw		Format the highlighted text as with "gw".  (for
-			{Visual} see |Visual-mode|).  {not in Vi}
+			{Visual} see |Visual-mode|).
 
 Example: To format the current paragraph use:			*gqap*  >
 	gqap
@@ -1620,9 +1606,9 @@ editing text paragraphs.  A few hints on how to use this:
 
 - Set 'formatoptions' to "aw2tq" to make text with indents like this:
 
-	    bla bla foobar bla 
+	    bla bla foobar bla
 	bla foobar bla foobar bla
-	    bla bla foobar bla 
+	    bla bla foobar bla
 	bla foobar bla bla foobar
 
 - Add the 'c' flag to only auto-format comments.  Useful in source code.

@@ -1828,7 +1828,6 @@ Options:
 - If possible, use getrlimit() to set 'maxmemtot' and 'maxmem'. (Pina)
 - Added "alpha" to 'nrformats': increment or decrement an alphabetic character
   with CTRL-A and CTRL-X.
-- ":set opt&vi" sets an option to its Vi default, ":set opt&vim" to its Vim
   default.  Useful to set 'cpo' to its Vim default without knowing what flags
   that includes.
 - 'scrolloff' now also applies to a long, wrapped line that doesn't fit in the

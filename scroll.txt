@@ -117,7 +117,7 @@ z<CR>			Redraw, line [count] at top of window (default
 
 							*zt*
 zt			Like "z<CR>", but leave the cursor in the same
-			column.  {not in Vi}
+			column. 
 
 							*zN<CR>*
 z{height}<CR>		Redraw, make window {height} lines tall.  This is
@@ -133,7 +133,7 @@ z.			Redraw, line [count] at center of window (default
 							*zz*
 zz			Like "z.", but leave the cursor in the same column.
 			Careful: If caps-lock is on, this command becomes
-			"ZZ": write buffer and exit!  {not in Vi}
+			"ZZ": write buffer and exit! 
 
 							*z-*
 z-			Redraw, line [count] at bottom of window (default
@@ -142,7 +142,6 @@ z-			Redraw, line [count] at bottom of window (default
 
 							*zb*
 zb			Like "z-", but leave the cursor in the same column.
-			{not in Vi}
 
 ==============================================================================
 4. Scrolling horizontally				*scroll-horizontal*
@@ -182,12 +181,12 @@ text scrolls on the screen.
 							*zs*
 zs			Scroll the text horizontally to position the cursor
 			at the start (left side) of the screen.  This only
-			works when 'wrap' is off.  {not in Vi}
+			works when 'wrap' is off. 
 
 							*ze*
 ze			Scroll the text horizontally to position the cursor
 			at the end (right side) of the screen.  This only
-			works when 'wrap' is off.  {not in Vi}
+			works when 'wrap' is off. 
 
 ==============================================================================
 5. Scrolling synchronously				*scroll-binding*

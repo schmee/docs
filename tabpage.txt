@@ -205,7 +205,7 @@ LOOPING OVER TAB PAGES:
 		current tab page.
 		{cmd} can contain '|' to concatenate several commands.
 		{cmd} must not open or close tab pages or reorder them.
-		{not in Vi} {not available when compiled without the
+		{not available when compiled without the
 		|+listcmds| feature}
 		Also see |:windo|, |:argdo| and |:bufdo|.
 

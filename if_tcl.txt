@@ -63,12 +63,11 @@ Example: >
 			possible to add or delete lines using this command.
 			If {cmd} returns an error, the command is interrupted.
 			The default for [range] is the whole file: "1,$".
-			See |tcl-var-line| and |tcl-var-lnum|.  {not in Vi}
+			See |tcl-var-line| and |tcl-var-lnum|. 
 
 							*:tclfile* *:tclf*
 :tclf[ile] {file}	Execute the Tcl script in {file}.  This is the same as
 			":tcl source {file}", but allows file name completion.
-			{not in Vi}
 
 
 Note that Tcl objects (like variables) persist from one command to the next,

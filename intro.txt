@@ -688,7 +688,6 @@ gQ			Switch to "Ex" mode like with "Q", but really behave
 			like typing ":" commands after another.  All command
 			line editing, completion etc. is available.
 			Use the ":vi" command |:visual| to exit "Ex" mode.
-			{not in Vi}
 
 ==============================================================================
 7. The window contents					*window-contents*

@@ -145,7 +145,7 @@ q			Stops recording.  (Implementation note: The 'q' that
 
 							*:@:*
 :[addr]@:		Repeat last command-line.  First set cursor at line
-			[addr] (default is current line).  {not in Vi}
+			[addr] (default is current line). 
 
 							*:@@*
 :[addr]@@		Repeat the previous :@{0-9a-z"}.  First set cursor at
@@ -169,7 +169,6 @@ For writing a Vim script, see chapter 41 of the user manual |usr_41.txt|.
 			|:bufdo|, in a loop or when another command follows
 			the display won't be updated while executing the
 			commands.
-			{not in Vi}
 
 							*:ru* *:runtime*
 :ru[ntime][!] {file} ..
@@ -201,7 +200,6 @@ For writing a Vim script, see chapter 41 of the user manual |usr_41.txt|.
 			when no file could be found.
 			When 'verbose' is two or higher, there is a message
 			about each searched file.
-			{not in Vi}
 
 :scripte[ncoding] [encoding]		*:scripte* *:scriptencoding* *E167*
 			Specify the character encoding used in the script.
@@ -230,13 +228,12 @@ For writing a Vim script, see chapter 41 of the user manual |usr_41.txt|.
 
 			When compiled without the |+multi_byte| feature this
 			command is ignored.
-			{not in Vi}
 
 						*:scrip* *:scriptnames*
 :scrip[tnames]		List all sourced script names, in the order they were
 			first sourced.  The number is used for the script ID
 			|<SID>|.
-			{not in Vi} {not available when compiled without the
+			{not available when compiled without the
 			|+eval| feature}
 
 						*:fini* *:finish* *E168*
@@ -247,7 +244,7 @@ For writing a Vim script, see chapter 41 of the user manual |usr_41.txt|.
 			following the ":finally" up to the matching |:endtry|
 			are executed first.  This process applies to all
 			nested ":try"s in the script.  The outermost ":endtry"
-			then stops sourcing the script.  {not in Vi}
+			then stops sourcing the script. 
 
 All commands and command sequences can be repeated by putting them in a named
 register and then executing it.  There are two ways to get the commands in the
