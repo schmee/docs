@@ -19,10 +19,10 @@ The basics are explained in section |02.5| of the user manual.
 1. Undo and redo commands				*undo-commands*
 
 <Undo>		or					*undo* *<Undo>* *u*
-u			Undo [count] changes.  {Vi: only one level}
+u			Undo [count] changes.
 
 							*:u* *:un* *:undo*
-:u[ndo]			Undo one change.  {Vi: only one level}
+:u[ndo]			Undo one change.
 								*E830*
 :u[ndo] {N}		Jump to after change number {N}.  See |undo-branches|
 			for the meaning of {N}. 
@@ -32,7 +32,7 @@ CTRL-R			Redo [count] changes which were undone.  {Vi: redraw
 			screen}
 
 							*:red* *:redo* *redo*
-:red[o]			Redo one change which was undone.  {Vi: no redo}
+:red[o]			Redo one change which was undone.
 
 							*U*
 U			Undo all latest changes on one line, the line where
@@ -364,10 +364,10 @@ information you can use these commands: >
 	:unlet old_undolevels
 
 Marks for the buffer ('a to 'z) are also saved and restored, together with the
-text.  {Vi does this a little bit different}
+text.
 
 When all changes have been undone, the buffer is not considered to be changed.
-It is then possible to exit Vim with ":q" instead of ":q!" {not in Vi}.  Note
+It is then possible to exit Vim with ":q" instead of ":q!"  Note
 that this is relative to the last write of the file.  Typing "u" after ":w"
 actually changes the buffer, compared to what was written, so the buffer is
 considered changed then.

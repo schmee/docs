@@ -34,7 +34,7 @@ For inserting text see |insert.txt|.
 			deletes the last character of the count.
 			See |:fixdel| if the <Del> key does not do what you
 			want.  See |'whichwrap'| for deleting a line break
-			(join lines).  {Vi does not support <Del>}
+			(join lines).
 
 							*X* *dh*
 ["x]X			Delete [count] characters before the cursor [into
@@ -325,7 +325,7 @@ The following commands change the case of letters.  The currently active
 g~{motion}		Switch case of {motion} text.
 
 g~g~							*g~g~* *g~~*
-g~~			Switch case of current line. {not in Vi}.
+g~~			Switch case of current line.
 
 							*v_~*
 {Visual}~		Switch case of highlighted text (for {Visual} see
@@ -345,7 +345,7 @@ gU{motion}		Make {motion} text uppercase.
 
 
 gUgU							*gUgU* *gUU*
-gUU			Make current line uppercase. {not in Vi}.
+gUU			Make current line uppercase.
 
 							*v_u*
 {Visual}u		Make highlighted text lowercase (for {Visual} see
@@ -355,7 +355,7 @@ gUU			Make current line uppercase. {not in Vi}.
 gu{motion}		Make {motion} text lowercase.
 
 gugu							*gugu* *guu*
-guu			Make current line lowercase. {not in Vi}.
+guu			Make current line lowercase.
 
 							*g?* *rot13*
 g?{motion}		Rot13 encode {motion} text.
@@ -365,7 +365,7 @@ g?{motion}		Rot13 encode {motion} text.
 			|Visual-mode|).
 
 g?g?							*g?g?* *g??*
-g??			Rot13 encode current line. {not in Vi}.
+g??			Rot13 encode current line.
 
 To turn one line into title caps, make every first letter of a word
 uppercase: >
@@ -959,11 +959,11 @@ inside of strings can change!  Also see 'softtabstop' option. >
 
 							*p* *put* *E353*
 ["x]p			Put the text [from register x] after the cursor
-			[count] times.  {Vi: no count}
+			[count] times.
 
 							*P*
 ["x]P			Put the text [from register x] before the cursor
-			[count] times.  {Vi: no count}
+			[count] times.
 
 							*<MiddleMouse>*
 ["x]<MiddleMouse>	Put the text from a register before the cursor [count]

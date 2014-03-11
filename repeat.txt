@@ -106,11 +106,11 @@ To abort this type CTRL-C twice.
 q{0-9a-zA-Z"}		Record typed characters into register {0-9a-zA-Z"}
 			(uppercase to append).  The 'q' command is disabled
 			while executing a register, and it doesn't work inside
-			a mapping and |:normal|.  {Vi: no recording}
+			a mapping and |:normal|.
 
 q			Stops recording.  (Implementation note: The 'q' that
 			stops recording is not stored in the register, unless
-			it was the result of a mapping)  {Vi: no recording}
+			it was the result of a mapping)
 
 							*@*
 @{0-9a-z".=*+}		Execute the contents of register {0-9a-z".=*+} [count]
@@ -122,7 +122,7 @@ q			Stops recording.  (Implementation note: The 'q' that
 			applies.
 			For "@=" you are prompted to enter an expression.  The
 			result of the expression is then executed.
-			See also |@:|.  {Vi: only named registers}
+			See also |@:|.
 
 							*@@* *E748*
 @@			Repeat the previous @{0-9a-z":*} [count] times.

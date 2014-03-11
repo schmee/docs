@@ -206,7 +206,7 @@ g8			Print the hex values of the bytes used in the
 
 			Example: >
 				:exe "normal \<c-w>\<c-w>"
-<			{not in Vi, of course}
+<
 			{not available when the |+ex_extra| feature was
 			disabled at compile time}
 

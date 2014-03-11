@@ -610,7 +610,7 @@ If the command is a normal search command (it starts and ends with "/" or
 	"^[#a-zA-Z_].*\<tagname[ \t]*("
   This means: A line starting with '#' or an identifier and containing the tag
   followed by white space and a '('.  This will find macro names and function
-  names with a type prepended.  {the extra searches are not in Vi}
+  names with a type prepended.
 
 ==============================================================================
 6. Include file searches		*include-search* *definition-search*

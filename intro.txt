@@ -755,7 +755,7 @@ that is not shown, the screen is scrolled horizontally.  The advantage of
 this method is that columns are shown as they are and lines that cannot fit
 on the screen can be edited.  The disadvantage is that you cannot see all the
 characters of a line at once.  The 'sidescroll' option can be set to the
-minimal number of columns to scroll.  {Vi: has no 'wrap' option}
+minimal number of columns to scroll.
 
 All normal ASCII characters are displayed directly on the screen.  The <Tab>
 is replaced with the number of spaces that it represents.  Other non-printing
@@ -809,7 +809,7 @@ Make it at least 40 characters wide to be able to read most messages on the
 last line.
 
 On most Unix systems, resizing the window is recognized and handled correctly
-by Vim.  {Vi: not ok}
+by Vim.
 
 ==============================================================================
 8. Definitions						*definitions*

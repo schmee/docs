@@ -168,7 +168,7 @@ CTRL-R CTRL-P {0-9a-z"%#*+/:.-=}			*i_CTRL-R_CTRL-P*
 						*i_CTRL-T*
 CTRL-T		Insert one shiftwidth of indent at the start of the current
 		line.  The indent is always rounded to a 'shiftwidth' (this is
-		vi compatible).  {Vi: only when in indent}
+		vi compatible).
 						*i_CTRL-D*
 CTRL-D		Delete one shiftwidth of indent at the start of the current
 		line.  The indent is always rounded to a 'shiftwidth' (this is
@@ -180,7 +180,7 @@ CTRL-D		Delete one shiftwidth of indent at the start of the current
 						*i_^_CTRL-D*
 ^ CTRL-D	Delete all indent in the current line.  The indent is
 		restored in the next line.  This is useful when inserting a
-		label.  {Vi: CTRL-D works only when used after autoindent}
+		label.
 
 						*i_CTRL-V*
 CTRL-V		Insert next non-digit literally.  For special keys, the
@@ -188,7 +188,7 @@ CTRL-V		Insert next non-digit literally.  For special keys, the
 		decimal, octal or hexadecimal value of a character
 		|i_CTRL-V_digit|.
 		The characters typed right after CTRL-V are not considered for
-		mapping.  {Vi: no decimal byte entry}
+		mapping.
 		Note: When CTRL-V is mapped (e.g., to paste text) you can
 		often use CTRL-Q instead |i_CTRL-Q|.
 
@@ -532,7 +532,7 @@ If the 'expandtab' option is on, a <Tab> will replace one character with
 several spaces.  The result of this is that the number of characters in the
 line increases.  Backspacing will delete one space at a time.  The original
 character will be put back for only one space that you backspace over (the
-last one).  {Vi does not have the 'expandtab' option}
+last one).
 
 ==============================================================================
 6. Virtual Replace mode		*vreplace-mode* *Virtual-Replace-mode*

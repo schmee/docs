@@ -830,7 +830,7 @@ Type					effect ~
 
 Any other key causes the meaning of the keys to be displayed.
 
-(*)  backwards scrolling is {not in Vi}.  Only scrolls back to where messages
+(*)  backwards scrolling is  Only scrolls back to where messages
      started to scroll.
 (**) Clicking the left mouse button only works:
      - For the GUI: in the last line of the screen.

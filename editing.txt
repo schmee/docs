@@ -51,7 +51,7 @@ for editing (e.g., with ":e filename") or writing (e.g., with ":w filename"),
 the file name is added to the list.  You can use the buffer list to remember
 which files you edited and to quickly switch from one file to another (e.g.,
 to copy text) with the |CTRL-^| command.  First type the number of the file
-and then hit CTRL-^.  {Vi: only one alternate file name is remembered}
+and then hit CTRL-^.
 
 
 CTRL-G		or				*CTRL-G* *:f* *:fi* *:file*
@@ -673,12 +673,12 @@ list of the current window.
 			Edit [count] previous file in argument list.  This
 			fails when changes have been made and Vim does not
 			want to |abandon| the current buffer.
-			Also see |++opt| and |+cmd|.  {Vi: no count or ++opt}.
+			Also see |++opt| and |+cmd|.
 
 :[count]N[ext]! [count] [++opt] [+cmd]
 			Edit [count] previous file in argument list.  Discard
 			any changes to the buffer.  Also see |++opt| and
-			|+cmd|.  {Vi: no count or ++opt}.
+			|+cmd|.
 
 :[count]prev[ious] [count] [++opt] [+cmd]		*:prev* *:previous*
 			Same as :Next.  Also see |++opt| and |+cmd|.  {Vi:
@@ -689,12 +689,12 @@ list of the current window.
 			Start editing the first file in the argument list.
 			This fails when changes have been made and Vim does
 			not want to |abandon| the current buffer.
-			Also see |++opt| and |+cmd|. {Vi: no ++opt}
+			Also see |++opt| and |+cmd|.
 
 :rew[ind]! [++opt] [+cmd]
 			Start editing the first file in the argument list.
 			Discard any changes to the buffer.  Also see |++opt|
-			and |+cmd|. {Vi: no ++opt}
+			and |+cmd|.
 
 							*:fir* *:first*
 :fir[st][!] [++opt] [+cmd]
@@ -1275,7 +1275,7 @@ present in 'cpoptions' and "!" is not used in the command.
 :lch[dir][!]		Same as |:lcd|.
 
 							*:pw* *:pwd* *E187*
-:pw[d]			Print the current directory name.  {Vi: no pwd}
+:pw[d]			Print the current directory name.
 			Also see |getcwd()|.
 
 So long as no |:lcd| command has been used, all windows share the same current
