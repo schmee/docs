@@ -5313,7 +5313,6 @@ A jump table for the options with a short description can be found at |Q_op|.
 	in read-only mode ("vim -R") or when the executable is called "view".
 	When using ":w!" the 'readonly' option is reset for the current
 	buffer, unless the 'Z' flag is in 'cpoptions'.
-	set for the newly edited buffer.
 
 						*'redrawtime'* *'rdt'*
 'redrawtime' 'rdt'	number	(default 2000)
