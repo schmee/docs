@@ -1015,8 +1015,8 @@ CTRL-I			Go to [count] newer cursor position in jump list
 			{not available without the |+jumplist| feature}
 
 							*:ju* *:jumps*
-:ju[mps]		Print the jump list (not a motion command). {not available without
-						the |+jumplist| feature}
+:ju[mps]		Print the jump list (not a motion command).
+			{not available without the |+jumplist| feature}
 
 							*jumplist*
 Jumps are remembered in a jump list.  With the CTRL-O and CTRL-I command you
