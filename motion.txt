@@ -218,8 +218,7 @@ g^			When lines wrap ('wrap' on): To the first non-blank
 			When lines don't wrap ('wrap' off): To the leftmost
 			non-blank character of the current line that is on the
 			screen.  Differs from "^" when the first non-blank
-			character of the line is not on the screen.  {not in
-			Vi}
+			character of the line is not on the screen.
 
 							*gm*
 gm			Like "g0", but half a screenwidth to the right (or as
@@ -408,20 +407,12 @@ WORD before the fold.
 
 Special case: "cw" and "cW" are treated like "ce" and "cE" if the cursor is
 on a non-blank.  This is because "cw" is interpreted as change-word, and a
-word does not include the following white space.  {Vi: "cw" when on a blank
-followed by other blanks changes only the first blank; this is probably a
-bug, because "dw" deletes all the blanks}
+word does not include the following white space.
 
 Another special case: When using the "w" motion in combination with an
 operator and the last word moved over is at the end of a line, the end of
 that word becomes the end of the operated text, not the first word in the
 next line.
-
-The original Vi implementation of "e" is buggy.  For example, the "e" command
-will stop on the first character of a line if the previous line was empty.
-But when you use "2e" this does not happen.  In Vim "ee" and "2e" are the
-same, which is more logical.  However, this causes a small incompatibility
-between Vi and Vim.
 
 ==============================================================================
 5. Text object motions					*object-motions*
@@ -931,8 +922,7 @@ These commands are not marks themselves, but jump to a mark:
 			line.
 
 							*]`*
-]`			[count] times to lowercase mark after the cursor. {not
-			in Vi}
+]`			[count] times to lowercase mark after the cursor.
 
 							*['*
 ['			[count] times to previous line with a lowercase mark
@@ -1025,8 +1015,8 @@ CTRL-I			Go to [count] newer cursor position in jump list
 			{not available without the |+jumplist| feature}
 
 							*:ju* *:jumps*
-:ju[mps]		Print the jump list (not a motion command).  {not in
-			Vi} {not available without the |+jumplist| feature}
+:ju[mps]		Print the jump list (not a motion command).
+			{not available without the |+jumplist| feature}
 
 							*jumplist*
 Jumps are remembered in a jump list.  With the CTRL-O and CTRL-I command you

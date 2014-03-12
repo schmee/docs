@@ -131,10 +131,6 @@ OPTIONS
        -b          Binary  mode.  A few options will be set that makes it pos-
                    sible to edit a binary or executable file.
 
-       -C          Compatible.  Set the 'compatible' option.  This  will  make
-                   Vim  behave  mostly  like  Vi,  even  though  a .vimrc file
-                   exists.
-
        -d          Start in diff mode.  There should be  two,  three  or  four
                    file  name arguments.  Vim will open all the files and show
                    differences between them.  Works like vimdiff(1).
@@ -198,10 +194,6 @@ OPTIONS
                    options  will be unset, so that changes are not allowed and
                    files can not be written.  Note that these options  can  be
                    set to enable making modifications.
-
-       -N          No-compatible  mode.   Reset the 'compatible' option.  This
-                   will make Vim behave a bit better, but less Vi  compatible,
-                   even though a .vimrc file does not exist.
 
        -n          No  swap file will be used.  Recovery after a crash will be
                    impossible.  Handy if you want to edit a  file  on  a  very
@@ -415,14 +407,5 @@ AUTHOR
 
 BUGS
        Probably.  See ":help todo" for a list of known problems.
-
-       Note that a number of things that may be regarded as bugs by some,  are
-       in  fact  caused by a too-faithful reproduction of Vi's behaviour.  And
-       if you think other things are bugs "because Vi  does  it  differently",
-       you  should  take  a closer look at the vi_diff.txt file (or type :help
-       vi_diff.txt when in Vim).  Also have a look  at  the  'compatible'  and
-       'cpoptions' options.
-
-
 
                                   2006 Apr 11                           VIM(1)

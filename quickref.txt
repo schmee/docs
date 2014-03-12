@@ -643,7 +643,6 @@ Short explanation of each option:		*option-list*
 'columns'	  'co'	    number of columns in the display
 'comments'	  'com'     patterns that can start a comment line
 'commentstring'   'cms'     template for comments; used for fold marker
-'compatible'	  'cp'	    behave Vi-compatible as much as possible
 'complete'	  'cpt'     specify how Insert mode completion works
 'completefunc'	  'cfu'     function to be used for Insert mode completion
 'completeopt'	  'cot'     options for Insert mode completion

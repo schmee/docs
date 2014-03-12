@@ -44,12 +44,12 @@ Vim is pronounced as one word, like Jim, not vi-ai-em.  It's written with a
 capital, since it's a name, again like Jim.
 
 This manual is a reference for all the Vim commands and options.  This is not
-an introduction to the use of Vi or Vim, it gets a bit complicated here and
-there.  For beginners, there is a hands-on |tutor|.  To learn using Vim, read
-the user manual |usr_toc.txt|.
+an introduction to the use Vim, it gets a bit complicated here and there.  For
+beginners, there is a hands-on |tutor|.  To learn using Vim, read the user
+manual |usr_toc.txt|.
 
 							*book*
-There are many books on Vi that contain a section for beginners.  There are
+There are many books on Vim that contain a section for beginners.  There are
 two books I can recommend:
 
 	"Vim - Vi Improved" by Steve Oualline
@@ -260,32 +260,6 @@ the ideas from all these people: They keep Vim alive!
 *love* *peace* *friendship* *gross-national-happiness*
 
 
-In this documentation there are several references to other versions of Vi:
-							*Vi* *vi*
-Vi	"the original".  Without further remarks this is the version
-	of Vi that appeared in Sun OS 4.x.  ":version" returns
-	"Version 3.7, 6/7/85".  Sometimes other versions are referred
-	to.  Only runs under Unix.  Source code only available with a
-	license.  More information on Vi can be found through:
-		http://vi-editor.org	[doesn't currently work...]
-							*Posix*
-Posix	From the IEEE standard 1003.2, Part 2: Shell and utilities.
-	Generally known as "Posix".  This is a textual description of
-	how Vi is supposed to work.
-	See |posix-compliance|.
-							*Nvi*
-Nvi	The "New" Vi.  The version of Vi that comes with BSD 4.4 and FreeBSD.
-	Very good compatibility with the original Vi, with a few extensions.
-	The version used is 1.79.  ":version" returns "Version 1.79
-	(10/23/96)".  There has been no release the last few years, although
-	there is a development version 1.81.
-	Source code is freely available.
-							*Elvis*
-Elvis	Another Vi clone, made by Steve Kirkendall.  Very compact but isn't
-	as flexible as Vim.
-	The version used is 2.1.  It is still being developed.  Source code is
-	freely available.
-
 ==============================================================================
 4. Notation						*notation*
 
@@ -322,9 +296,7 @@ and <> are part of what you type, the context should make this clear.
 
 							*{}*
 {}		Curly braces denote parts of the command which must appear,
-		but which can take a number of different values.  The
-		differences between Vim and Vi are also given in curly braces
-		(this will be clear from the context).
+		but which can take a number of different values.
 
 							*{char1-char2}*
 {char1-char2}	A single character from the range char1 to char2.  For
@@ -631,11 +603,7 @@ Ex		 :vi	  --	  --	 --	    --	      --
      the command.
    In the last case <Esc> may be the character defined with the 'wildchar'
    option, in which case it will start command-line completion.  You can
-   ignore that and type <Esc> again.  {Vi: when hitting <Esc> the command-line
-   is executed.  This is unexpected for most people; therefore it was changed
-   in Vim.  But when the <Esc> is part of a mapping, the command-line is
-   executed.  If you want the Vi behaviour also when typing <Esc>, use ":cmap
-   ^V<Esc> ^V^M"}
+   ignore that and type <Esc> again.
 *4 Go from Normal to Select mode by:
    - use the mouse to select text while 'selectmode' contains "mouse"
    - use a non-printable command to move the cursor while keeping the Shift
@@ -787,16 +755,14 @@ command characters		'showcmd'	on	    off
 cursor position			'ruler'		off	    off
 
 The current mode is "-- INSERT --" or "-- REPLACE --", see |'showmode'|.  The
-command characters are those that you typed but were not used yet.  {Vi: does
-not show the characters you typed or the cursor position}
+command characters are those that you typed but were not used yet.
 
 If you have a slow terminal you can switch off the status messages to speed
 up editing:
 	:set nosc noru nosm
 
 If there is an error, an error message will be shown for at least one second
-(in reverse video).  {Vi: error messages may be overwritten with other
-messages before you have a chance to read them}
+(in reverse video).
 
 Some commands show how many lines were affected.  Above which threshold this
 happens can be controlled with the 'report' option (default 2).

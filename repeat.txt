@@ -86,8 +86,7 @@ The previous context mark will only be set once (with "''" you go back to
 where the cursor was before the global command).
 
 The global command sets both the last used search pattern and the last used
-substitute pattern (this is vi compatible).  This makes it easy to globally
-replace a string:
+substitute pattern.  This makes it easy to globally replace a string:
 	:g/pat/s//PAT/g
 This replaces all occurrences of "pat" with "PAT".  The same can be done with:
 	:%s/pat/PAT/g
@@ -147,8 +146,7 @@ q			Stops recording.  (Implementation note: The 'q' that
 
 							*:@@*
 :[addr]@@		Repeat the previous :@{0-9a-z"}.  First set cursor at
-			line [addr] (default is current line).  {Vi: only in
-			some versions}
+			line [addr] (default is current line).
 
 ==============================================================================
 4. Using Vim scripts					*using-scripts*

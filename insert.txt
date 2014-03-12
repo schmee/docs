@@ -57,8 +57,7 @@ CTRL-C		Quit insert mode, go back to Normal mode.  Do not check for
 		event.
 
 						*i_CTRL-@*
-CTRL-@		Insert previously inserted text and stop insert.  {Vi: only
-		when typed as first char, only up to 128 chars}
+CTRL-@		Insert previously inserted text and stop insert.
 						*i_CTRL-A*
 CTRL-A		Insert previously inserted text. 
 
@@ -167,16 +166,12 @@ CTRL-R CTRL-P {0-9a-z"%#*+/:.-=}			*i_CTRL-R_CTRL-P*
 
 						*i_CTRL-T*
 CTRL-T		Insert one shiftwidth of indent at the start of the current
-		line.  The indent is always rounded to a 'shiftwidth' (this is
-		vi compatible).
+		line.  The indent is always rounded to a 'shiftwidth'.
 						*i_CTRL-D*
 CTRL-D		Delete one shiftwidth of indent at the start of the current
-		line.  The indent is always rounded to a 'shiftwidth' (this is
-		vi compatible).  {Vi: CTRL-D works only when used after
-		autoindent}
+		line.  The indent is always rounded to a 'shiftwidth'.
 						*i_0_CTRL-D*
-0 CTRL-D	Delete all indent in the current line.  {Vi: CTRL-D works
-		only when used after autoindent}
+0 CTRL-D	Delete all indent in the current line.
 						*i_^_CTRL-D*
 ^ CTRL-D	Delete all indent in the current line.  The indent is
 		restored in the next line.  This is useful when inserting a
@@ -242,8 +237,7 @@ CTRL-^		Toggle the use of typing language characters.
 		'keymap' option can be used to install a whole number of them.
 
 						*i_CTRL-]*
-CTRL-]		Trigger abbreviation, without inserting a character.  {not in
-		Vi}
+CTRL-]		Trigger abbreviation, without inserting a character.
 
 						*i_<Insert>*
 <Insert>	Toggle between Insert and Replace mode. 
@@ -457,7 +451,7 @@ characters to the 'formatoptions' option:
 "l"  Only break a line if it was not longer than 'textwidth' when the insert
      started.
 "v"  Only break at a white character that has been entered during the
-     current insert command.  This is mostly Vi-compatible.
+     current insert command.
 "lv" Only break if the line was not longer than 'textwidth' when the insert
      started and only at a white character that has been entered during the
      current insert command.  Only differs from "l" when entering non-white
@@ -484,8 +478,7 @@ The 'expandtab' option is off by default.  Note that in Replace mode, a single
 character is replaced with several spaces.  The result of this is that the
 number of characters in the line increases.  Backspacing will delete one
 space at a time.  The original character will be put back for only one space
-that you backspace over (the last one).  {Vi does not have the 'expandtab'
-option}
+that you backspace over (the last one).
 
 							*ins-smarttab*
 When the 'smarttab' option is on, a <Tab> inserts 'shiftwidth' positions at
@@ -1772,15 +1765,13 @@ gi			Insert text in the same position as where Insert mode
 
 							*o*
 o			Begin a new line below the cursor and insert text,
-			repeat [count] times.  {Vi: blank [count] screen
-			lines}
+			repeat [count] times.
 			When the '#' flag is in 'cpoptions' the count is
 			ignored.
 
 							*O*
 O			Begin a new line above the cursor and insert text,
-			repeat [count] times.  {Vi: blank [count] screen
-			lines}
+			repeat [count] times.
 			When the '#' flag is in 'cpoptions' the count is
 			ignored.
 
@@ -1895,7 +1886,7 @@ line use the command ":0r {name}".
 
 After the ":read" command, the cursor is left on the first non-blank in the
 first new line.  Unless in Ex mode, then the cursor is left on the last new
-line (sorry, this is Vi compatible).
+line.
 
 If a file name is given with ":r", it becomes the alternate file.  This can be
 used, for example, when you want to edit that file instead: ":e! #".  This can
