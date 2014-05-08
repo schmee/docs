@@ -192,7 +192,6 @@ patches, suggestions and giving feedback about what is good and bad in Vim.
 Vim would never have become what it is now, without the help of these people!
 
 	Ron Aaron		Win32 GUI changes
-	Mohsin Ahmed		encryption
 	Zoltan Arpadffy		work on VMS port
 	Tony Andrews		Stevie
 	Gert van Antwerpen	changes for DJGPP on MS-DOS

@@ -5398,11 +5398,6 @@ setwinvar({nr}, {varname}, {val})			*setwinvar()*
 			:call setwinvar(1, "&list", 0)
 			:call setwinvar(2, "myvar", "foobar")
 
-sha256({string})						*sha256()*
-		Returns a String with 64 hex charactes, which is the SHA256
-		checksum of {string}.
-		{only available when compiled with the |+cryptv| feature}
-
 shellescape({string} [, {special}])			*shellescape()*
 		Escape {string} for use as a shell command argument.
 		On MS-Windows and MS-DOS, when 'shellslash' is not set, it
@@ -6399,7 +6394,6 @@ cmdline_hist		Compiled with |cmdline-history| support.
 cmdline_info		Compiled with 'showcmd' and 'ruler' support.
 comments		Compiled with |'comments'| support.
 compatible		Compiled to be very Vi compatible.
-cryptv			Compiled with encryption support |encryption|.
 cscope			Compiled with |cscope| support.
 debug			Compiled with "DEBUG" defined.
 dialog_con		Compiled with console dialog support.

@@ -150,7 +150,6 @@ $VIMRUNTIME	starting.txt	/*$VIMRUNTIME*
 'cpoptions'	options.txt	/*'cpoptions'*
 'cpt'	options.txt	/*'cpt'*
 'crb'	options.txt	/*'crb'*
-'cryptmethod'	options.txt	/*'cryptmethod'*
 'cscopepathcomp'	options.txt	/*'cscopepathcomp'*
 'cscopeprg'	options.txt	/*'cscopeprg'*
 'cscopequickfix'	options.txt	/*'cscopequickfix'*
@@ -1156,7 +1155,6 @@ $VIMRUNTIME	starting.txt	/*$VIMRUNTIME*
 +cmdline_info	various.txt	/*+cmdline_info*
 +comments	various.txt	/*+comments*
 +conceal	various.txt	/*+conceal*
-+cryptv	various.txt	/*+cryptv*
 +cscope	various.txt	/*+cscope*
 +cursorbind	various.txt	/*+cursorbind*
 +cursorshape	various.txt	/*+cursorshape*
@@ -2553,7 +2551,6 @@ $VIMRUNTIME	starting.txt	/*$VIMRUNTIME*
 :read!	insert.txt	/*:read!*
 :rec	recover.txt	/*:rec*
 :recover	recover.txt	/*:recover*
-:recover-crypt	recover.txt	/*:recover-crypt*
 :red	undo.txt	/*:red*
 :redi	various.txt	/*:redi*
 :redir	various.txt	/*:redir*
@@ -5222,7 +5219,6 @@ empty()	eval.txt	/*empty()*
 encoding-names	mbyte.txt	/*encoding-names*
 encoding-table	mbyte.txt	/*encoding-table*
 encoding-values	mbyte.txt	/*encoding-values*
-encryption	editing.txt	/*encryption*
 end	intro.txt	/*end*
 end-of-file	pattern.txt	/*end-of-file*
 enlightened-terminal	syntax.txt	/*enlightened-terminal*
@@ -6821,7 +6817,6 @@ new-debug-mode	version6.txt	/*new-debug-mode*
 new-debug-support	version7.txt	/*new-debug-support*
 new-define-operator	version7.txt	/*new-define-operator*
 new-diff-mode	version6.txt	/*new-diff-mode*
-new-encryption	version5.txt	/*new-encryption*
 new-evim	version6.txt	/*new-evim*
 new-ex-commands-5.2	version5.txt	/*new-ex-commands-5.2*
 new-file-browser	version6.txt	/*new-file-browser*
@@ -6843,7 +6838,6 @@ new-lua	version7.txt	/*new-lua*
 new-manpage-trans	version7.txt	/*new-manpage-trans*
 new-map-expression	version7.txt	/*new-map-expression*
 new-map-select	version7.txt	/*new-map-select*
-new-more-encryption	version7.txt	/*new-more-encryption*
 new-more-highlighting	version7.txt	/*new-more-highlighting*
 new-more-unicode	version7.txt	/*new-more-unicode*
 new-multi-byte	version5.txt	/*new-multi-byte*

@@ -461,14 +461,6 @@ a slash.  Thus "-R" means recovery and "-/R" readonly.
 		file is read or written, even if 'viminfo' is set or when
 		":rv" or ":wv" are used.  See also |viminfo-file|.
 
-							*-x*
--x		Use encryption to read/write files.  Will prompt for a key,
-		which is then stored in the 'key' option.  All writes will
-		then use this key to encrypt the text.  The '-x' argument is
-		not needed when reading a file, because there is a check if
-		the file that is being read has been encrypted, and Vim asks
-		for a key automatically. |encryption|
-
 							*-X*
 -X		Do not try connecting to the X server to get the current
 		window title and copy/paste using the X clipboard.  This
